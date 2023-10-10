@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "./Contact.css";
 import "../Topic/Topic";
-import Topic from "../Topic/Topic";
-
+import Kojohn from '../Kojohn/Kojohn'
 function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -28,6 +27,7 @@ function Contact() {
 
   return (
     <div>
+      <Kojohn/>
       <div className="cover">
         <p className="stack">Contact Me</p>
       </div>
