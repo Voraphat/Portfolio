@@ -1,0 +1,54 @@
+.home {
+  font-family: "Teko", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.home p{
+  position: relative;
+  text-align: center;
+  font-size: 8vmin;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 0.8;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-size: 80% 100%;
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s linear infinite;
+}
+.home span{
+  font-size: 4vmin;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 0.8;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-size: 80% 100%;
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s linear infinite;
+}
+/* .image {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  transform: translate(0, -20%) rotate(0);
+} */
+
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+
+  100% {
+    background-position-x: 500%;
+  }
+}

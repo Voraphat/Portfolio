@@ -1,0 +1,112 @@
+.about {
+  width: 90%;
+  height: 100vh;
+  position: relative;
+}
+
+
+.about .container {
+    height: 100vh;
+}
+.img {
+  width: 10%;
+}
+
+.about p{
+    
+}
+
+.tech{
+    font-size: 1.5rem;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #030303,
+    0 0 42px rgb(0, 0, 0),
+    0 0 82px rgb(0, 0, 0),
+    0 0 92px rgb(3, 3, 3),
+    0 0 102px rgb(0, 0, 0),
+    0 0 151px rgb(0, 0, 0);
+}
+
+img {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  min-width: 40%;
+  /* min-height: 100%; */
+  width: auto;
+  z-index: -100;
+  background-size: cover;
+  transition: 1s opacity;
+}
+
+#polina {
+  color: white;
+  padding: 2rem;
+  width: 33%;
+  top: 15rem;
+  float: left;
+  left: 14rem;
+  font-size: 1.2rem;
+  position: relative;
+}
+.about h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-top: 0;
+  letter-spacing: 0.3rem;
+}
+#polina button {
+  display: block;
+  width: 80%;
+  padding: 0.4rem;
+  border: none;
+  margin: 1rem auto;
+  font-size: 1.3rem;
+  background: rgba(255, 255, 255, 0.23);
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s background;
+}
+#polina button:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+  .icon{
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+  .about-stack {
+    color: white;
+    /* width: 60%; */
+    padding: 1% 7% 1% 10%;
+    float: lef;
+    display: block;
+    position: absolute;
+    margin-top: 3rem;
+    top: 0;
+    box-shadow: 0em 0em 5em rgba(10, 10, 10, 0.7);
+  }
+  .about-stack {
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 40px #0ff,
+      0 0 80px #0ff,
+      0 0 90px #0ff,
+      0 0 100px #0ff,
+      0 0 150px #0ff;
+    text-transform: uppercase;
+    font-size: 7rem;
+    line-height: 0.7em;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+@media screen and (max-width: 500px) {
+  .about div {
+    width: 70%;
+  }
+}
