@@ -13,8 +13,6 @@ import Project2 from "../../assets/Project/Project2.svg";
 import Project3 from "../../assets/Project/Project3.svg";
 
 import "./Hero.css";
-import Skill from "../Skill/Skill";
-import Contact from "../Contact/Contact";
 import Kojohn from "../Kojohn/Kojohn";
 import Topic from "../Topic/Topic";
 
