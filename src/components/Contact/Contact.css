@@ -1,6 +1,8 @@
+
+
 .contactcontainer {
   max-width: 600px;
-  margin: 15rem auto;
+  margin:  auto;
   padding: 20px;
   font-size: 2rem;
   background-color: #010101;
@@ -116,12 +118,3 @@ input[type="submit"]:hover {
     max-width: 600px;
   }
 }
-
-
-
-
-
-
-
-
-

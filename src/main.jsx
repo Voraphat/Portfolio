@@ -4,8 +4,8 @@ import App from "./App.jsx";
 import Hero from './components/Hero/Hero.jsx'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Contact from "./components/Contact/Contact.jsx";
-import Project from "./components/Project/Project.jsx";
 import AboutMe from "./components/Aboutme/Aboutme.jsx";
+import Slider from "./components/Slide/Slider.jsx";
 
 const router = createBrowserRouter([
   {
@@ -25,9 +25,9 @@ const router = createBrowserRouter([
     element: <Contact />,
   },
   {
-    path: "/project",
-    element: <Project />,
-  },
+    path:"/slide",
+    element:<Slider/>
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

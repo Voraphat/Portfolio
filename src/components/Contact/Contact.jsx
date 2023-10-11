@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Contact.css";
 import "../Topic/Topic";
-import Kojohn from '../Kojohn/Kojohn'
+import Navbar from '../Navbar/Navbar'
 function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -18,16 +18,14 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // ส่งข้อมูลที่กรอกไปยังเซิร์ฟเวอร์หรือประมวลผลตามที่คุณต้องการ
     console.log(formData);
 
-    // เมื่อส่งข้อมูลสำเร็จให้เปลี่ยนสถานะเป็น submitted
     setSubmitted(true);
   };
 
   return (
-    <div>
-      <Kojohn/>
+    <div className="contact">
+      <Navbar/>
       <div className="cover">
         <p className="stack">Contact Me</p>
       </div>

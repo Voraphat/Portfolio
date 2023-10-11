@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="home">
-      <Link to="/home">
+      <Link to="/slide">
         <p>
           welcome to my world <br />
           <span>github.com/voraphat</span>

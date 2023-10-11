@@ -1,15 +1,16 @@
 import React, { useEffect } from 'react';
 import './Topic.css'
-// import 'letteringjs'; 
+import Navbar from '../Navbar/Navbar'
+
 
 
 
 function Topic() {
   return (
     <section className='topic'>
+      <Navbar/>
       <div className="cover">
-        <p className="stack">My</p>
-        <p className="stack">skill</p>
+        <p className="stack">My Skill</p>
       </div>
     </section>
   );

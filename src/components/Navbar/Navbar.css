@@ -1,72 +1,163 @@
 
-
-.navbar {
+.ellipses-container {
+  width: 35rem;
+  height: 35rem;
+  border-radius: 50%;
+  margin: auto;
   position: absolute;
-  font-size: 18px;
-  padding: 2rem 0 0 1rem;
+  top: 25%;
+  right: 89%; 
 }
 
-.heading {
-  color: #ccc;
-  font-size: 2rem;
+  .nav-link {
+    color: white;
+    text-decoration: none;  
+  }
+  
+  .nav-link:active,
+  .nav-link:focus {
+    color: #ff4500; 
+  }
+
+  .active {
+    font-weight: bold;
+    color: blue;
+  }
+  
+  .ellipses-container.ellipses__paused .ellipses__outer--thin {
+    animation-play-state: paused;
+  }
+
+  
+  .ellipses__outer--thin {
+    width: 100%;
+    height: 100%;
+    border-width: 2px;
+    border-color: rgba(9, 56, 62, 0.1);
+    border-radius: 30%; 
+    animation: ellipsesOrbit 10s ease-in-out infinite; 
+  }
+
+  .text {
+    font-size: 24px; 
+    white-space: nowrap;
+    animation: textAnimation 15s linear infinite;
+    position: absolute; 
+    z-index: 1; 
+  }
+  .ellipses {
+    border-radius: 50%;
+    position: absolute;
+    border-style: solid;
+  }
+
+  .ellipses__outer--thick {
+    width: 99.5%;
+    height: 99.5%;
+    border-width: 2px;
+    transform: rotate(-45deg);
+    animation: ellipsesRotate 15s ease-in-out infinite;
+  }
+  
+  
+  .ellipses__orbit {
+      width: 2.5rem;
+      border-width: 2px;
+      top: 5rem;
+      right: 6.75rem;
+  }
+
+  .text {
+    font-size: 24px; 
+    white-space: nowrap;
+    animation: textAnimation 15s linear infinite;
+    position: absolute; 
+    z-index: 1;
+    left: 50%; 
+    transform: translateX(-50%); 
+  }
+
+
+   .ellipses__orbit--1 {
+    top: 40%;
+    right:-8%; 
 }
 
-.nav {
-  margin: 20px auto;
-  left: 60px;
-  width: 455px;
-  min-height: auto;
+.ellipses__orbit--2 {
+    top: 50%;
+    right:-10%; 
 }
 
-ul.list ul {
-  position:relative;
-  margin-left:10px;     
+.ellipses__orbit--3 {
+    top: 60%;
+    right: -8%; 
+} 
+
+  /* .ellipses__orbit--1 {
+    top: 101%;
+    right: 65%; 
 }
 
-ul.list ul:before {
-  content:"";
-  display:block;
-  position:absolute;
-  top:0;
-  left:0;
-  bottom:0;
-  width:0;
-  border-left:1px solid #ccc;
+.ellipses__orbit--2 {
+    top: 102%;
+    right: 47%; 
 }
 
-ul.list li  {
-  position:relative;
-  padding:10px 20px;
-  color:#ccc;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight:normal;
-  line-height:20px;   
+.ellipses__orbit--3 {
+    top: 101%;
+    right: 30%; 
+} */
+
+ @keyframes ellipsesOrbit {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+  } 
+
+  /* สไตล์สำหรับหน้าจอขนาดเล็ก (เช่น mobile)
+@media (max-width: 768px) {
+  .ellipses-container {
+      top: 5rem; 
+      right: 5rem; 
+  }
 }
 
-ul.list li a { 
-  position:relative;
-  color:#ccc;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size:30px;
-  font-weight:bold;
-  line-height:20px;
+/* สไตล์สำหรับหน้าจอขนาดกลาง (เช่น tablet) */
+/* @media (min-width: 769px) and (max-width: 1024px) {
+  .ellipses-container {
+      top: 10rem; 
+      right: 15rem; 
+  }
+}  */
+
+@media screen and (max-width:900px) {
+.ellipses-container {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  margin: auto;
+  top: -20%;
+  right: 0; 
+}
+  .ellipses__orbit--1 {
+    top: 98%;
+    right:70%; 
+    /* left: -10%; */
 }
 
-ul.list ul li:before {
-  content:"";
-  display:block;
-  position:absolute;
-  top:15px;
-  left: 0;
-  width:10px;
-  border-top:1px solid #ccc;    
+.ellipses__orbit--2 {
+    top: 102%;
+    right:45%; 
+    /* left: -10%; */
 }
 
-ul.list ul li:last-child:before {
-  top: 10px; 
-  bottom: 0;
-  height: auto;
+.ellipses__orbit--3 {
+    top: 98%;
+    /* left: -10%; */
+    right: 20%; 
+} 
 }
-
