@@ -7,17 +7,15 @@ import { BiLogoGmail } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import Layout from "../Layout/Layout";
+import About from '../Abouttopic/Abouttopic'
 import '../Topic/Topic.css'
 
 
 const AboutMe = () => {
   return (
-    <Layout>
-      <div className="about">
-      <div className="cover">
-        <p className="stack">About me</p>
-      </div>
 
+      <div className="about">
+        <About/>
         <div className="containerr">
           <div className="image">
             <img src={bg} alt="" />
@@ -71,8 +69,7 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
-      </div>
-    </Layout>
+        </div>
   );
 };
 

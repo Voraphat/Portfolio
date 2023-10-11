@@ -1,5 +1,7 @@
 
-
+.contact{
+  width: 100%;
+}
 .contactcontainer {
   max-width: 600px;
   margin:  auto;
