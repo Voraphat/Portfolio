@@ -25,24 +25,15 @@ const AboutMe = () => {
             <div className="text-about">
               <h1>MR.Voraphat</h1>
               <p>
-                <Link>
+                <Link to='www.linkedin.com/in/voraphat'>
                   <AiFillLinkedin className="icon" />
                 </Link>
-                <Link>
+                <Link to='https://github.com/Voraphat'>
                   <AiFillGithub className="icon" />
-                </Link>
-                <Link>
-                  <BiLogoGmail className="icon" />
                 </Link>
               </p>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin
-                non eros blandit, rutrum est a, cursus quam. Nam ultricies,
-                velit ac suscipit vehicula, turpis eros sollicitudin lacus, at
-                convallis mauris magna non justo. Etiam et suscipit elit. Morbi
-                eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a
-                mattis dapibus. Etiam volutpat vel enim at auctor.
+              I graduated from King Mongkut's Institute of Technology Ladkrabang and then went on to attend Generation Junior Software Developer Bootcamp, which concentrated on software development. I believe in hard effort, dedication, and continuous learning, and I strive to continually develop my skills and attain my goals.
               </p>
               <div>
                 <p>

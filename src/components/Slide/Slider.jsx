@@ -3,27 +3,27 @@ import "./Slide.css";
 
 import Project1 from "../../assets/Project/Project1.svg";
 import Project2 from "../../assets/Project/Project2.svg";
-import Project3 from "../../assets/Project/Project3.svg";
+// import Project3 from "../../assets/Project/React.JPG";
+import Project3 from '../../assets/Project/React.svg'
+
 import Navbar from '../Navbar/Navbar'
+import {Link} from 'react-router-dom'
 
 const slideData = [
   {
     Image: Project1,
     name: "ECOMMERCE",
-    description:
-      "Tinh ru anh di chay pho, chua kip chay pho thi anh chay mat tieu",
+    Link:"https://github.com/Voraphat/ecommerce"
   },
   {
     Image: Project2,
-    name: "Adminpage",
-    description:
-      "Tinh ru anh di chay pho, chua kip chay pho thi anh chay mat tieu",
+    name: "Project Colmar",
+    Link:"https://github.com/Voraphat/Colmar-codeacademy"
   },
   {
     Image: Project3,
-    name: "Colmar",
-    description:
-      "Tinh ru anh di chay pho, chua kip chay pho thi anh chay mat tieu",
+    name: "React-Assessment",
+    Link:"https://github.com/Voraphat/React-Assessment"
   },
 ];
 
@@ -69,24 +69,26 @@ const Slider = () => {
             </div>
           </button>
 
-          <div className="cards__wrapper">
-            {slideData.map((slide, index) => (
-              <div
-                key={index}
-                className={`card ${
-                  index === currentSlide
-                    ? "current--card"
-                    : index === (currentSlide + 1) % slideData.length
-                    ? "next--card"
-                    : "previous--card"
-                }`}
-              >
-                <div className="card__image">
-                  <img src={slide.Image} alt="" />
-                </div>
-              </div>
-            ))}
-          </div>
+          {slideData.map((slide, index) => (
+  <div key={index} onClick={() => window.location.href = slide.Link}>
+    <Link to={slide.Link}>
+      <div
+        key={index}
+        className={`card ${
+          index === currentSlide
+            ? "current--card"
+            : index === (currentSlide + 1) % slideData.length
+            ? "next--card"
+            : "previous--card"
+        }`}
+      >
+        <div className="card__image">
+          <img src={slide.Image} alt="" />
+        </div>
+      </div>
+    </Link>
+  </div>
+))}
 
           <button className="cardList__btn btn btn--right" onClick={handleNext}>
             <div className="icon">
