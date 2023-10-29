@@ -1,8 +1,20 @@
-# React + Vite
+## Portfolio Project
+This project is a portfolio project that utilizes CSS exclusively for web page styling.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## ขั้นตอนการติดตั้ง 
+1. Download the code or clone the repository
+2. Open the project in your terminal
+3. Use the command npm install to install the dependencies
+4. Use the command npm run dev to run the project in development mode
 
-Currently, two official plugins are available:
+## Importance
+This project has been developed using CSS only to style the web page and incorporates various packages and tools to support efficient development.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Additional Information
+
+This project serves as a portfolio aiming to showcase the work and personal information of the developer. For any further questions or additional information, please contact the developer.
+
+
+## Development Team
+This project was developed by [Mr.voraphat](https://github.com/Voraphat)
+Click here to view the project on Vercel: [Portfolio on Vercel](https://portfolio-nu-two-24.vercel.app/)
