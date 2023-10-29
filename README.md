@@ -1,7 +1,7 @@
 ## Portfolio Project
 This project is a portfolio project that utilizes CSS exclusively for web page styling.
 
-## ขั้นตอนการติดตั้ง 
+## Installation Steps
 1. Download the code or clone the repository
 2. Open the project in your terminal
 3. Use the command npm install to install the dependencies
